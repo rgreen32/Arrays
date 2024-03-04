@@ -1,0 +1,55 @@
+<html lang="en">
+<style>
+
+    .item {
+        display: inline-block;
+        width: 33%;
+        height: 20%;
+        border: 3px solid red;
+        box-sizing: border-box;
+        margin: 1%;
+    }
+
+</style>
+
+<body>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    
+    <button onclick='
+    let randomDecimal = Math.random();
+    let maxItems = 5
+    let randomNumberOfItems = Math.floor(maxItems * randomDecimal)
+    for(let i = 0; i < randomNumberOfItems; i++ ){
+        document.body.innerHTML += `<div class="item"></div>`
+    }
+
+    let itemHTMLElements = document.getElementsByClassName("item")
+    
+
+
+    for(let i = 0; i < itemHTMLElements.length; i++){
+        let itemElement = itemHTMLElements[i]
+        itemElement.style.backgroundColor = "red"
+    }
+
+
+    '>Add item</button>
+</body>
+
+<script>
+
+    let itemHTMLElements = document.getElementsByClassName("item")
+    
+
+
+    for(let i = 0; i < itemHTMLElements.length; i++){
+        let itemElement = itemHTMLElements[i]
+        itemElement.style.backgroundColor = "red"
+    }
+
+    console.log(itemHTMLElements)
+
+</script>
+</html>

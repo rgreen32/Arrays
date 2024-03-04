@@ -1,0 +1,67 @@
+<style>
+    * {
+        border: 3px solid red;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+    }
+    
+    #header {
+        height: 20%;
+    }
+
+    #content {
+        height: 80%;
+
+    }
+
+    #formContainer {
+        width: 30%;
+        height: 100%;
+        display: inline-block;
+        vertical-align: top; /* Aligns the top edges of inline-block elements */
+        border: 4px solid purple;
+    }
+
+    #itemsContainer {
+        width: 69%;
+        height: 100%;
+        display: inline-block;
+        border: 3px solid blue;
+        vertical-align: top; /* Aligns the top edges of inline-block elements */
+
+
+    }
+    #form {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50%;
+        margin-left: 25%;
+        font-size: xx-large;
+        white-space: nowrap;
+    }
+    #form input {
+        font-size: x-large;
+        margin-top: 3%
+
+    }
+</style>
+<body>
+    <div id="header"></div>
+    <div id="content">
+        <div id="formContainer">
+            <div id="form">
+                <h1>Item Image Url</h1>
+                <input id="imageLink" placeholder="" type="text"/>
+                <br>
+                <h1>Item description</h1>
+                <input id="description" type="text"/> 
+            </div>
+        </div>
+        <div id="itemsContainer"></div>
+    </div>
+</body>
